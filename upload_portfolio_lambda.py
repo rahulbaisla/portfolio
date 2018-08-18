@@ -11,7 +11,20 @@ def lambda_handler(event, context):
     sns = boto3.resource('sns')
     topic = sns.Topic('arn:aws:sns:ap-southeast-2:998481987873:deployPortfolioTopic')
 
+    location = { "bucketName": 'portfoliobuild.rahulbaisla.com',
+                 "objectKey": 'portfoliobuild.zip'
+               }
+
     try:
+        job = event.get("CodePipeline.job")
+
+        if job:
+            for artifact in job["data"]["inputArtifacts"]:
+                if artifact["name"] == "MyAppBuild":
+                    location = artifact["location"]["s3Location"]
+
+        print("Building portfolio from " + str(location))
+
         # Define Buckets
         portfolio_bucket = s3.Bucket("portfolio.rahulbaisla.com")
         build_bucket = s3.Bucket("portfoliobuild.rahulbaisla.com")
@@ -28,8 +41,12 @@ def lambda_handler(event, context):
 
         print('job done !!')
         topic.publish(Subject="Portfolio Deployed", Message="Portfolio deployed Successfully.")
+
+        if job:
+            codepipeline = boto3.client('codepipeline')
+            codepipeline.put_job_success_result(jobId=job['id'])
     except:
-        topic.publish(Subject="Portfolio Deployment Failed", Message="Portfolio deployment  Failed.")
+        topic.publish(Subject="Portfolio Deploy Failed", Message="Portfolio deployment  Failed.")
         raise
 
     return 'Hello from Lambda'
