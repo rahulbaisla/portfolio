@@ -21,8 +21,14 @@
 */
 
 .background--skyBlue {
-  background-color: rgb(52, 152, 219);
+  background-color: rgb(148, 192, 204);
+  # BlueChalk 94c0cc designpieces
 }
+
+.color--black {
+  color: rgb(FF, FF, 0);
+}
+
 
 .color--skyBlue {
   color: rgb(52, 152, 219);
