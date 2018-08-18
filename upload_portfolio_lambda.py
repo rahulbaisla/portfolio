@@ -1,7 +1,7 @@
 import boto3
 import mimetypes
-Import zipfile
-Import os
+import zipfile
+import os
 
 s3_client = boto3.client('s3')
 
