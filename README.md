@@ -10,3 +10,9 @@ HTML<br />
 CSS<br />
 Font Awesome<br />
 Google Fonts<br />
+Python<br/>
+Boto3<br />
+
+AWS Lambda <br/>
+AWS Code Deploy<br/>
+AWS Code Pipeline<br/>

@@ -46,7 +46,7 @@
   color: rgb(44, 62, 80);
 }
 
-.section__example {
+.section__sample {
   background-color: rgb(44, 62, 80);
 }
 
@@ -118,38 +118,38 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-50%, -50%);
 }
 
-.section__exampleWrapper,
-.section__example {
+.section__sampleWrapper,
+.section__sample {
   display: inline-block;
   height: 35rem;
   width: 35rem;
 }
 
-.section__exampleWrapper {
+.section__sampleWrapper {
   margin-right: 4rem;
 }
 
-.section__example {
+.section__sample {
   border-radius: 100%;
   cursor: pointer;
   overflow: hidden;
   position: relative;
 }
 
-.section__example:active {
+.section__sample:active {
   transition: 0.05s all;
   width: 34rem;
   height: 34rem;
 }
 
-.section__exampleTitle{
+.section__sampleTitle{
   font-size: 3.4rem;
   text-align: center;
   text-transform: uppercase;
   width: 90%;
 }
 
-.section__exampleImage {
+.section__sampleImage {
   opacity: 0.25;
   width: 250%;
   margin-left: -50%;
