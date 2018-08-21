@@ -6,7 +6,7 @@ class SampleWork extends React.Component {
 <section class="section section--alignCentered section--description">
       {this.props.work.map((myWork, idx) => {
           return (
-            <SampleWorkComp myWork={myWork} key={idx}/>
+            <SampleWorkItemComp myWork={myWork} key={idx}/>
           )
         })
       }
@@ -15,7 +15,7 @@ class SampleWork extends React.Component {
   }
 }
 
-class SampleWorkComp extends React.Component {
+class SampleWorkItemComp extends React.Component {
   render() {
     let myWork = this.props.myWork;
     return (
@@ -36,3 +36,4 @@ class SampleWorkComp extends React.Component {
   }
 }
 export default SampleWork;
+export {SampleWorkItemComp};
