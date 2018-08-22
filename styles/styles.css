@@ -1,0 +1,124 @@
+/* Typography */
+
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 426px)
+.about-page-content {
+    width: calc(100% - 5rem);
+}
+
+.icons-social i {
+	font-size: 3em;
+}
+
+body {
+	background: #EDEDED;
+	color: #4B5658;
+}
+
+/* Custom Styles */
+
+/* Landing Page Styles */
+
+.landing-page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	text-align: center;
+}
+
+.intro {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+.landing-page main .tagline {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
+
+.icons-social i {
+	padding: 10px;
+}
+
+
+/* About Page Styles */
+
+.about-page {
+	display: flex;
+	min-height: 100vh;
+	padding: 3em;
+}
+
+.about-page-content {
+	flex:auto;
+	margin: 0 auto;
+	justify-content: left;
+}
+
+.about-page .about-page-content h1 {
+	  font-family: Roboto,sans-serif;
+    padding: 1rem 0;
+    font-size: 3rem;
+}
+
+.about-page .about-page-content p {
+	 font-size: .1.2rem;
+}
+
+/* Portfolio Page Styles */
+
+.portfolio-page {
+	display: flex;
+	min-height: 100vh;
+	padding: 3em;
+}
+
+.portfolio-page-content {
+	flex:auto;
+	margin: 0 auto;
+	justify-content: left;
+
+}
+
+.portfolio-page-content {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	text-align: center;
+}
+.portfolio-page-content h2 {
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
