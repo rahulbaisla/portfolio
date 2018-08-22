@@ -37,7 +37,7 @@
     "webpack-cli": "^2.0.13"
   },
   "jest": {
-"verbose": true,
-"testURL": "http://127.0.0.1/"
-}
+  "verbose": true,
+  "testURL": "http://127.0.0.1/"
+  }
 }

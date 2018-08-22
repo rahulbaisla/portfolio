@@ -7,8 +7,8 @@ class  LandingPage extends React.Component {
 
       <div className="landing-page">
         <main>
-          <div id="intro" className="intro">Hello</div>
-          <div id="tagLine" className="tagline">Full Stack Dev | AWS | JAVA | Spring | Reactjs</div>
+          <div id="intro" className="intro">Hello I'm Rahul</div>
+          <div id="tagLine" className="tagline">Full Stack Dev | AWS | JAVA | Spring | React.js</div>
           <div id="social-icons" className="icons-social">
             <a id="githubUrl" target="_blank" href="https://github.com/rahulbaisla"><i className="fab fa-github"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/rahul-bansal-69146015/"><i className="fab fa-linkedin"></i></a>

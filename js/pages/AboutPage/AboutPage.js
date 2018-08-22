@@ -8,17 +8,19 @@ class  AboutPage extends React.Component {
         <div class="about-page-content">
           <h1>About</h1>
           <p>
-            I am a software developer with 9+ years of experience who loves to code.
+            I am a software developer who enjoys his work and loves to code.
           </p>
           <p>
-            Recently, i decided to start learning to code in the cloud with some latest technologies!
             I like to work hard and learn new things.
           </p>
           <p>
-          This is my Serverless portfolio built using following technologies<br></br>
-            - Frontend : React.js, Babel.js, npm, webpack <br></br>
-            - Build & Deployment : AWS S3, AWS Code Build, AWS Code Pipeline, AWS Lambda, Python <br></br>
-            - Testing: jest, Chai.js, Mocha.js<br></br>
+            Recently, i decided to start learning to code in the cloud and learn some new technologies!
+            <br></br><br></br>
+
+            So, Here I am with my first Serverless portfolio built using following technologies<br></br>
+            - React.js, Babel.js, npm, webpack <br></br>
+            - AWS S3, AWS Code Build, AWS Code Pipeline, AWS Lambda, Python <br></br>
+            - jest, Enzyme <br></br>
           </p>
         </div>
       </div>

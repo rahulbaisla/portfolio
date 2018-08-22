@@ -9,10 +9,10 @@ def lambda_handler(event, context):
     # Define s3 resources
     s3 = boto3.resource('s3', config=Config(signature_version='s3v4'))
     sns = boto3.resource('sns')
-    topic = sns.Topic('arn:aws:sns:ap-southeast-2:998481987873:deployPortfolioTopic')
+    topic = sns.Topic("ARN_NAME")
 
-    location = { "bucketName": 'portfoliobuild.rahulbaisla.com',
-                 "objectKey": 'portfoliobuild.zip'
+    location = { "bucketName": "BUCKET_NAME",
+                 "objectKey":  "OBJECT_KEY"
                }
 
     try:
@@ -26,12 +26,12 @@ def lambda_handler(event, context):
         print("Building portfolio from " + str(location))
 
         # Define Buckets
-        portfolio_bucket = s3.Bucket("portfolio.rahulbaisla.com")
-        build_bucket = s3.Bucket("portfoliobuild.rahulbaisla.com")
+        portfolio_bucket = s3.Bucket("PORTFOLIO_BUCKET_NAME")
+        build_bucket = s3.Bucket("BUILD_BUCKET_NAME")
 
         # Download the artefacts from s3 Bucket to inmemory
         portfolio_zip = io.BytesIO()
-        build_bucket.download_fileobj('portfoliobuild.zip', portfolio_zip)
+        build_bucket.download_fileobj('ZIP_FILE_TO_DOWNLOAD', portfolio_zip)
 
         # Iterate through files in Zip and upload to portforlio bucket
         with zipfile.ZipFile(portfolio_zip) as myzip:
