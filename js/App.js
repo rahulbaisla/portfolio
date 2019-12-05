@@ -8,9 +8,7 @@ class  App extends React.Component {
   render() {
     return (
       <div id="root">
-         <LandingPage/>
-         <AboutPage/>
-         <PortfolioPage/>
+        <LandingPage />
       </div>
     );
   };

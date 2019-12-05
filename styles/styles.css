@@ -38,8 +38,8 @@ html {
 }
 
 body {
-	background: #455A64;
-	color: #FFFFFF;
+	background: #FAFAFA;
+	color: #0277BD;
 }
 
 /* Custom Styles */
@@ -86,9 +86,13 @@ body {
 }
 
 .about-page .about-page-content h1 {
-	  font-family: Roboto,sans-serif;
+	font-family: Roboto,sans-serif;
     padding: 1rem 0;
     font-size: 3rem;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
 }
 
 .about-page .about-page-content p {
