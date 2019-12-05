@@ -5,10 +5,10 @@ class  LandingPage extends React.Component {
   render() {
     return (
 
-      <div className="landing-page">
+      <main className="landing-page">
         <main>
           <div id="intro" className="intro">Hello I'm Rahul Baisla</div>
-          <div id="tagLine" className="tagline">AWS Cloud Engineer | Software Developer| Educator</div>
+          <div id="tagLine" className="tagline">AWS Cloud Engineer | Software Developer | Educator</div>
           <div id="social-icons" className="icons-social">
             <a target="_blank" href="https://github.com/rahulbaisla"><i className="fab fa-github" title="GitHub"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/rahulbaisla"><i className="fab fa-linkedin" title="LinkedIn"></i></a>
@@ -16,9 +16,15 @@ class  LandingPage extends React.Component {
             <a target="_blank" href="RahulBaisla-Resume.pdf"><i className="fas fa-file-alt" title="Download Resume"></i></a>
             <a target="_blank" href="https://www.facebook.com/rahulbaisla"><i className="fab fa-facebook" title="Facebook"></i></a>
             <a target="_blank" href="https://www.instagram.com/strength.letic"><i className="fab fa-instagram" title="Instagram"></i></a>
+            
           </div>
+
+            <p>This landing page is built and deployed using following technologies</p>
+            <p>Frontend : React.js, Babel.js, npm, webpack </p>
+            <p>CI/CD : AWS S3, AWS Code Build, AWS Code Pipeline, AWS Lambda </p>
+ 
         </main>
-      </div>
+      </main>
     );
   };
 };
