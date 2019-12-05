@@ -16,13 +16,7 @@ class  LandingPage extends React.Component {
             <a target="_blank" href="RahulBaisla-Resume.pdf"><i className="fas fa-file-alt" title="Download Resume"></i></a>
             <a target="_blank" href="https://www.facebook.com/rahulbaisla"><i className="fab fa-facebook" title="Facebook"></i></a>
             <a target="_blank" href="https://www.instagram.com/strength.letic"><i className="fab fa-instagram" title="Instagram"></i></a>
-            
           </div>
-
-            <p>This landing page is built and deployed using following technologies</p>
-            <p>Frontend : React.js, Babel.js, npm, webpack </p>
-            <p>CI/CD : AWS S3, AWS Code Build, AWS Code Pipeline, AWS Lambda </p>
- 
         </main>
       </main>
     );
